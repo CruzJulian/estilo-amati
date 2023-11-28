@@ -1,1 +1,3 @@
-# Estilo amati \n este es el repositorio web de Estilo amati, para alojar el website 
+# Estilo amati
+
+Este es el repositorio web de Estilo amati, para alojar el website 
