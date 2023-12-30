@@ -5,7 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
-	list-style: none;
+	/*list-style: none;*/
 	font-family: Arial, Helvetica, sans-serif
 }
 
@@ -20,14 +20,14 @@ header
 
 	background: rgb(0,0,0);
 	background: linear-gradient(
-		180deg, rgba(0,0,0,0.8) 0%, 
+		180deg, rgba(0,0,0,0.7) 30%, 
 		rgba(0,0,0,0) 100%);
 
 	/*display: flex;*/
 	justify-content: center;
 	align-items: center;
 	transition: 0.6s;
-	padding:2vh 2vw 2vh 2vw;
+	padding:2vh 0.2vw 0vh 0.2vw;
 	z-index: 100000;
 }
 
@@ -92,7 +92,7 @@ header
 
 header.sticky
 {	
-	padding: 0.3vh;
+	padding:0.3vh 0.2vw 0.3vh 0.2vw;
 	background: #1a1a1aff;
 }
 
@@ -196,9 +196,26 @@ p
 	font-size: 2.4vmin;
 }
 
+ul
+{
+    list-style-type: decimal; 
+    /* Puedes cambiar 'disc' por 'circle' o 'square' según tus preferencias */
+}
+ 
+.h1_small
+{
+	font-size: 1.5vmax;
+	text-align: center;
+}
+
 .bl
 {
 	color:#000;
+}
+
+.dg
+{
+	color:#1a1a1aff;
 }
 
 .g
@@ -206,6 +223,20 @@ p
 	color:#1a1a1a99;
 }
 
+.y
+{
+	color:#ecb67aff;
+}
+
+.green
+{
+	color:#5cd75cff;
+}
+
+.br
+{
+	color: #604838ff;
+}
 
 
 
@@ -235,7 +266,7 @@ p
 
 .button_w:hover {
 	background-color: #bfbfbfff;
-	color: #564132ff;
+	color: #604838ff;
 	border: 1px solid  #bfbfbfff;
 }
 
@@ -243,7 +274,7 @@ p
 {
 	display: inline-table;
 	background-color: none;
-	border: 2px solid #564132ff;
+	border: 2px solid #604838ff;
 	
 	margin: 3vmin 0vmin 0vmin 3vmin;
 	padding: 0.7vmax;
@@ -254,14 +285,14 @@ p
 
 	font-family: 'Montserrat', serif;
 	font-size: 3.3vmin;
-	color: #564132ff;
+	color: #604838ff;
 
 	border-radius: 2vmin;
 	transition-duration: 0.4s;
 }
 
 .button_br:hover {
-  background-color: #564132ff;
+  background-color: #604838ff;
   color: white;
 }
 
@@ -290,8 +321,8 @@ p
 }
 
 .button_redes:hover {
-  background-color: #564132ff;
-  border: 1px solid #564132ff;
+  background-color: #604838ff;
+  border: 1px solid #604838ff;
 }
 
 
@@ -310,7 +341,7 @@ p
 	justify-content: center;
 	align-items: center;
 
-	padding:2vmin 10vw 2vmin 10vw;
+	padding:2vmin 7vw 2vmin 7vw;
 }
 
 
@@ -331,6 +362,53 @@ p
 	align-items: center;
 	padding:8vmin 8vw 8vmin 8vw;
 	border-radius: 5vw;
+}
+
+.totalbox-into
+{	
+	display: flex;
+	flex-wrap: wrap;
+
+	/*background-color: #363636ff;*/
+	background-color: #bfbfbfff;
+	/*border: 1px solid #bfbfbfff;*/
+	/*border: 1px solid #ecb67aff;*/
+
+	position: relative;
+
+	width: 80%;
+	
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	padding:8vmin 3vw 8vmin 3vw;
+	margin:0 10vw 0 10vw;
+	
+	border-radius: 5vw;
+}
+
+.totalbox-into2
+{	
+	display: flex;
+	flex-wrap: wrap;
+
+	/*background-color: #363636ff;*/
+	background-color: none;
+	/*border: 1px solid #bfbfbfff;*/
+	/*border: 1px solid #ecb67aff;*/
+
+	position: relative;
+
+	width: 80%;
+	
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	padding:8vmin 0 8vmin 0;
+	margin:0 10vw 0 10vw;
+	
+	border-radius: 5vw;
+	
 }
 
 
@@ -365,6 +443,54 @@ p
 	min-width: 250px;
 }
 
+.totalbox__1_buy
+{
+	position: relative;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	min-height: 46vmax;
+	width: auto;
+	max-width: 20vw;
+	min-width: 125px;
+
+
+	margin:3vw 1vh 3vw 1vh;
+	padding:2vw 2.5vw 2vw 2.5vw;	
+
+	border-radius:2vmax;
+	border: 1px solid #ecb67aff;
+}
+
+.buy
+{
+	font-family: 'Montserrat', sans-serif;
+
+	text-decoration: none;
+	position: relative;
+	margin: 1vh 0.5vmax 1vh 0.5vmax;
+	color: #fff;
+	/*color: #ecb67aff;*/
+	letter-spacing: 0.2vw;
+	font-weight: auto;
+	font-size: 1.80vmin;
+	text-align: left;
+}
+
+.buy2
+{
+	font-family: 'Montserrat', sans-serif;
+
+	text-decoration: none;
+	position: relative;
+	margin: 1vh 0.5vmax 1vh 0.5vmax;
+	color: #ecb67aff;
+	/*color: #ecb67aff;*/
+	letter-spacing: 0.2vw;
+	font-weight: auto;
+	font-size: 1.87vmin;
+	text-align: left;
+}
 
 .totalbox__2
 {
@@ -489,8 +615,19 @@ footer
 .img_svg2
 {
 	position: relative;
+	border-radius:2vw;
+	/*margin:5vmax 0 0 0;*/
+	width: 100%;
+	justify-content: center;
+	/*min-width: 250px;*/
+}
 
-	width: 20vmax;
+.img_svg3
+{
+	position: relative;
+
+	width: 2.5vmax;
+	margin: 0.5vmax;
 }
 
 .logo_footer
@@ -510,6 +647,4 @@ img
 {
 	scroll-margin-top: 11vh /*!important*/;
 }
-
-/*......................................................*/
 
