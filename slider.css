@@ -262,7 +262,7 @@
 
 @keyframes animate_slider1 {
 	0% {
-		background-image: url(sl1.png);
+		background-image: url(sl1.jpg);
 		background-size: cover;
 		background-position: center;
 	}
@@ -270,28 +270,28 @@
 	8.3333333% {background-position: right;}
 
 	16.666666666% {
-		background-image: url(sl2.png);
+		background-image: url(sl2.jpg);
 		background-size: cover;
 	}
 
 	25% {background-position: left;}
 
 	33.3333333333% {
-		background-image: url(sl3.png);
+		background-image: url(sl3.jpg);
 		background-size: cover;
 	}
 
 	41.66666% {background-position: right;}
 	
 	50% {
-		background-image: url(sl4.png);
+		background-image: url(sl4.jpg);
 		background-size: cover;
 	}
 
 	58.33333% {background-position: left;}
 
 	64.66666%  {
-		background-image: url(sl5.png);
+		background-image: url(sl5.jpg);
 		background-size: cover;
 	}
 	
@@ -299,7 +299,7 @@
 	75% {background-position: right;}
 
 	83.3% {
-		background-image: url(sl6.png);
+		background-image: url(sl6.jpg);
 		background-size: cover;
 	}
 	
@@ -307,7 +307,7 @@
 	
 
 	100%{
-		background-image: url(sl1.png);
+		background-image: url(sl1.jpg);
 		background-size: cover;
 		background-position: center;
 	}
@@ -323,73 +323,43 @@
 		background-position: center;
 	}
 
-	5% {background-position: right;}
+	8.3333333% {background-position: right;}
 
-	10% {
-		background-image: url(04_sl_grande_9.jpg);
+	16.666666666% {
+		background-image: url(04_sl_grande_4.jpg);
 		background-size: cover;
 	}
 
-	15% {background-position: left;}
+	25% {background-position: left;}
 
-	20% {
-		background-image: url(04_sl_grande_10.jpg);
-		background-size: cover;
-	}
-
-	25% {background-position: right;}
-	
-	30% {
+	33.3333333333% {
 		background-image: url(04_sl_grande_2.jpg);
 		background-size: cover;
 	}
 
-	35% {background-position: left;}
-
-	40%  {
-		background-image: url(04_sl_grande_3.jpg);
-		background-size: cover;
-	}
+	41.66666% {background-position: right;}
 	
-
-	45% {background-position: right;}
-
 	50% {
-		background-image: url(04_sl_grande_4.jpg);
-		background-size: cover;
-	}
-	
-	55% {background-position: left;}
-	
-
-	60% {
 		background-image: url(04_sl_grande_5.jpg);
 		background-size: cover;
 	}
 
-	65% {background-position: right;}
-	
-	70% {
-		background-image: url(04_sl_grande_6.jpg);
-		background-size: cover;
-	}
+	58.33333% {background-position: left;}
 
-	75% {background-position: left;}
-
-	80%  {
-		background-image: url(04_sl_grande_7.jpg);
-		background-size: cover;
-	}
-	
-
-	85% {background-position: right;}
-
-	90% {
+	64.66666%  {
 		background-image: url(04_sl_grande_8.jpg);
 		background-size: cover;
 	}
 	
-	95% {background-position: left;}
+
+	75% {background-position: right;}
+
+	83.3% {
+		background-image: url(04_sl_grande_7.jpg);
+		background-size: cover;
+	}
+	
+	91.66% {background-position: left;}
 	
 
 	100%{
