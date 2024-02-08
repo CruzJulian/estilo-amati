@@ -28,16 +28,26 @@ header
 
 	background: rgb(0,0,0);
 	background: linear-gradient(
-		180deg, rgba(0,0,0,0.7) 30%, 
-		rgba(0,0,0,0) 100%);
+		180deg, rgba(0,0,0,0.9) 0%, 
+		rgba(0,0,0,0.3) 100%);
 
-	/*display: flex;*/
 	justify-content: center;
 	align-items: center;
 	transition: 0.6s;
-	padding:2vh 0.2vw 0vh 0.2vw;
+	padding:2vh 0vw 0vh 0vw;
 	z-index: 100000;
 }
+
+
+.header__line
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 0 0;
+}
+
 
 .separador
 {	
@@ -49,7 +59,7 @@ header
 .header_logo
 {
 	height: 6vh;
-	margin: 0vh 5vmin 0vh 5vmin;
+	/*margin: 0vh 5vmin 0vh 5vmin;*/
 }
 
 
@@ -61,24 +71,34 @@ header
 
 	justify-content: center;
 	align-items: center;
-	
-
-
-
-	/*height: 9vh;/**/
-
-	justify-content: center;
-	align-items: center;
 }
 
-
-.header__line
+.header__nav--
 {
+	margin:0.5vh 4vmin 0.8vh 4vmin;
+}
+
+.header__nav--divlogo
+{	
 	position: relative;
 	display: flex;
-	height: 3px;
-	justify-content: center;
-	align-items: center;
+
+	position: relative;
+	padding: 0.5vh 0.5vh 0.5vh 0.8vh;
+	
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 1%;
+	font-size: 2.15vh;
+	transition: 0.6s;
+}
+
+.header__nav--divlogo:hover {
+	
+	background-color: #ffffff22;
+	border-radius: 5vh;
+	padding: 1vh;
 }
 
 
@@ -88,10 +108,10 @@ header
 	display: flex;
 
 	position: relative;
-	margin: 0.5vh 6vmin 0.8vh 6vmin;
+	padding: 0.5vh 3vmin 0.8vh 3vmin;
+	
 	text-decoration: none;
 	color: #fff;
-	/*letter-spacing: 0.2vw;*/
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 1%;
 	font-size: 2.15vh;
@@ -100,26 +120,24 @@ header
 
 .header__nav--div:hover {
 	
-	background-color: #ffffff11;
+	background-color: #ffffff33;
 	border-radius: 3vh;
-	margin: 0.5vh 0 0.8vh 0;
-	padding: 0.5vh 6vmin 0.8vh 6vmin;
+	padding: 0.5vh 4vmin 0.8vh 4vmin;
 }
 
 .header__nav--div2
 {	
-	border: 1px solid #ffffff55;
+	border: 1px solid #dfdfdf66;
 
 	border-radius: 3vh ;
 	position: relative;
 	display: flex;
 
 	position: relative;
-	margin: 0.5vh 0 0.8vh 0;
-	padding: 0.5vh 6vmin 0.8vh 6vmin;
+	padding: 0.5vh 3vmin 0.8vh 3vmin;
+
 	text-decoration: none;
 	color: #fff;
-	/*letter-spacing: 0.2vw;*/
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 1%;
 	font-size: 2.15vh;
@@ -128,28 +146,57 @@ header
 
 .header__nav--div2:hover {
 	
-	background-color: #ffffff11;
+	background-color: #ffffff33;
 	border-radius: 3vh;
-	margin: 0.5vh 0 0.8vh 0;
-	padding: 0.5vh 6vmin 0.8vh 6vmin;
+	padding: 0.5vh 4vmin 0.8vh 4vmin;
 }
 
 header.sticky
 {	
-	padding:0.3vh 0.2vw 0.3vh 0.2vw;
+	padding:0vh;
 	background: #38322eff;
 }
 
-/*header.sticky .header__nav--div
+header.sticky  .header__line
 {
-	color: #ecb67aff;
-}*/
+	padding: 0 0 4px 0;
+}
 
 header.sticky .separador
 {
 	background: #ecb67aff;
 }
 
+
+.whatsapp-button
+{	
+	position: fixed;
+	bottom: 16vh; /* Puedes ajustar la distancia desde la parte inferior */
+  right: 20px; /* Puedes ajustar la distancia desde la parte derecha */
+  z-index: 1000;
+
+	
+	padding: 0.7vmax;
+	
+	background-color: #38322e55;
+	border: 1px solid #fff;
+	border-radius: 2vmin;
+
+	transition-duration: 0.4s;
+}
+
+
+.whatsapp-button:hover {
+	background-color: #5cd75c99;
+	border: 1px solid #5cd75cff;
+}
+
+.whatsapp-button img {
+  width: 3vmax; /* Ajusta el tamaño del ícono según sea necesario */
+  height: auto;
+  margin: auto;
+
+}
 
 /*header.....................................................*/
 
@@ -854,6 +901,7 @@ img
     padding: 0;
     margin: 0;
 
+
 }
 
 .slick-dots li {
@@ -864,12 +912,28 @@ img
 .slick-prev {
 	left: 1vw; /* Ajusta la posición izquierda de la flecha previa */
 	z-index: 1;
+	color: #fff; /* Cambia el color aquí */
+  font-size: 0;
 }
 
 .slick-next {
-    right: 1vw; /* Ajusta la posición derecha de la flecha siguiente */
+  right: 1vw; /* Ajusta la posición derecha de la flecha siguiente */
 	z-index: 1;
+	color: #fff; /* Cambia el color aquí */
+  font-size: 0;
 }
+
+.slick-dots li button:before {
+    color: #fff; /* Cambia el color aquí */
+    font-size: 10px; /* Cambia el tamaño de los puntos */
+}
+        
+/* Estilo para el punto de selección */
+.slick-dots li.slick-active button:before {
+    color: #fff; /* Cambia el color del punto de selección */
+    font-size: 10px;
+}
+
 
 
 
