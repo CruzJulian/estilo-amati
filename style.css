@@ -14,7 +14,7 @@ font-family: 'Montserrat', sans-serif;
 	box-sizing: border-box;
 	text-decoration: none;
 	/*list-style: none;*/
-	font-family: Arial, Helvetica, sans-serif
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /*header.....................................................*/
@@ -210,11 +210,11 @@ body
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	/*background: #38322eff;*/
+	background: #38322eff;
 
 	background-image: url(img/patron_logo.svg);
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: repeat;
   background-attachment: fixed;
 }
 
@@ -309,14 +309,7 @@ ul
     list-style-type: decimal; 
     /* Puedes cambiar 'disc' por 'circle' o 'square' según tus preferencias */
 }
- 
-.title_buy
-{
-	font-size: 1.5vmax;
-	text-align: center;
-	color: #38322eff;
-	font-family: 'Playfair Display', serif;
-}
+
 
 .bl /*black*/
 {
@@ -392,7 +385,7 @@ ul
 {
 	display: inline-table;
 	background-color: none;
-	border: 2px solid #604838ff;
+	border: 1px solid #604838ff;
 	
 	margin: 3vmin 0vmin 0vmin 3vmin;
 	padding: 0.7vmax;
@@ -607,22 +600,23 @@ ul
 	flex: 1;
 	justify-content: center;
 	align-items: center;
-	min-height: 48vmax;
+	/*min-height: 48vmax;*/
 	width: auto;
 	max-width: 20vw;
 	min-width: 125px;
 
 
 	margin:3vw 1vh 3vw 1vh;
-	padding:1.5vw 2.5vw 1.5vw 2.5vw;	
+	padding:1.5vw 3vmax 1.5vw 3vmax;	
 
 	border-radius:2vmax;
 	/*border: 1px solid #ecb67aff;*/
 	background-color: #dfdfdfff;
-
-
-
 }
+
+
+
+
 
 .buy /*fuente*/
 {
@@ -637,6 +631,8 @@ ul
 	font-weight: auto;
 	font-size: 1.80vmin;
 	text-align: left;
+	margin:20px 0 20px 0;
+	min-height: 12.5vmin;
 }
 
 .buy2 /*fuente 2*/
@@ -652,9 +648,28 @@ ul
 	font-weight: auto;
 	font-size: 1.87vmin;
 	text-align: left;
+	margin:20px 0 20px 0;
+	min-height: 12.5vmin;
 }
 
 
+.title_buy
+{
+	font-size: 1.5vmax;
+	text-align: center;
+	color: #38322eff;
+	font-family: 'Playfair Display', serif;
+	/*margin:0;*/
+}
+
+
+.img_svg3 /*buy*/
+{
+	position: relative;
+
+	width: 2.5vmax;
+	margin:20px;
+}
 
 
 
@@ -760,13 +775,6 @@ footer
 	/*min-width: 250px;*/
 }
 
-.img_svg3 /*buy*/
-{
-	position: relative;
-
-	width: 2.5vmax;
-	margin: 0.5vmax;
-}
 
 .logo_footer
 {
