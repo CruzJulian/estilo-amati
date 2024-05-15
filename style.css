@@ -172,8 +172,8 @@ header.sticky .separador
 {	
 	position: fixed;
 	bottom: 16vh; /* Puedes ajustar la distancia desde la parte inferior */
-  right: 20px; /* Puedes ajustar la distancia desde la parte derecha */
-  z-index: 1000;
+  	right: 20px; /* Puedes ajustar la distancia desde la parte derecha */
+  	z-index: 1000;
 
 	
 	padding: 0.7vmax;
@@ -192,7 +192,7 @@ header.sticky .separador
 }
 
 .whatsapp-button img {
-  width: 3vmax; /* Ajusta el tamaño del ícono según sea necesario */
+  width: 4.5vmax; /* Ajusta el tamaño del ícono según sea necesario */
   height: auto;
   margin: auto;
 
@@ -203,7 +203,6 @@ header.sticky .separador
 
 
 /*body........................................................*/
-
 
 body
 {
@@ -306,7 +305,7 @@ p
 
 ul
 {
-    list-style-type: decimal; 
+    list-style-type: none; 
     /* Puedes cambiar 'disc' por 'circle' o 'square' según tus preferencias */
 }
 
@@ -632,7 +631,7 @@ ul
 	font-size: 1.80vmin;
 	text-align: left;
 	margin:20px 0 20px 0;
-	min-height: 12.5vmin;
+	min-height: 8.5vmin;
 }
 
 .buy2 /*fuente 2*/
@@ -649,7 +648,7 @@ ul
 	font-size: 1.87vmin;
 	text-align: left;
 	margin:20px 0 20px 0;
-	min-height: 12.5vmin;
+	min-height: 8.5vmin;
 }
 
 
